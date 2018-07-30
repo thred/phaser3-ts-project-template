@@ -1,0 +1,12 @@
+{
+    "typescript.extension.sortImports.sortOnSave": true,
+    "typescript.extension.sortImports.quoteStyle": "double",
+    "typescript.extension.sortImports.omitSemicolon": true,
+    "typescript.extension.sortImports.maxNamedImportsInSingleLine": 1,
+    "javascript.preferences.quoteStyle": "double",
+    "typescript.preferences.quoteStyle": "double",
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true
+}

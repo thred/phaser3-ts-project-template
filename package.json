@@ -1,0 +1,33 @@
+{
+  "name": "phaser3-ts-project-template",
+  "version": "1.0.0",
+  "description": "A Phaser 3 Project Template for TypeScript",
+  "main": "src/main.ts",
+  "scripts": {
+    "update_phaser_d_ts": "curl https://raw.githubusercontent.com/photonstorm/phaser3-docs/master/typescript/phaser.d.ts --output src/phaser.d.ts",
+    "start": "webpack --mode development && webpack-dev-server --mode development",
+    "build": "webpack --mode production && webpack-dev-server --mode production"
+  },
+  "keywords": [
+    "phaser",
+    "webpack",
+    "template",
+    "typescript"
+  ],
+  "author": "Manfred Hantschel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.5.4",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "phaser": "^3.0.0"
+  }
+}

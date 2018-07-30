@@ -1,0 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 800px;
+    margin: 0 auto;
+}
