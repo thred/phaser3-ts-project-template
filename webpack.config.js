@@ -1,4 +1,3 @@
-
 "use strict";
 
 const webpack = require("webpack");
@@ -17,14 +16,24 @@ module.exports = {
     },
 
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.css$/,
-                use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }]
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: "file-loader"
+                use: "file-loader",
+                exclude: "/node_modules/"
+            },
+            {
+                type: "javascript/auto",
+                test: /\.json$/,
+                use: "file-loader",
+                exclude: "/node_modules/"
             },
             {
                 test: /\.ts$/,
@@ -40,8 +49,8 @@ module.exports = {
 
     plugins: [
         new webpack.DefinePlugin({
-            'CANVAS_RENDERER': JSON.stringify(true),
-            'WEBGL_RENDERER': JSON.stringify(true)
+            "CANVAS_RENDERER": JSON.stringify(true),
+            "WEBGL_RENDERER": JSON.stringify(true)
         })
     ],
 
