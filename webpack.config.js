@@ -9,6 +9,8 @@ const phaser = path.join(phaserModule, "dist/phaser.js");
 module.exports = {
     entry: "./src/main.ts",
 
+    devtool: "inline-source-map",
+
     output: {
         path: path.resolve(__dirname, "build"),
         publicPath: "/build/",
